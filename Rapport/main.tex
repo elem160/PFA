@@ -1,0 +1,46 @@
+\documentclass[12pt]{report}
+
+\input{"Preambule.tex"}
+
+\begin{document}
+\sloppy
+
+\input{"Pages/pages_de_garde.tex"}
+
+\setcounter{page}{1}
+
+\input{"Pages/Remerciements.tex"}
+
+\input{"Pages/avant_propos.tex"}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table des matières}
+\tableofcontents
+
+\input{"Pages/abreviations.tex"}
+\input{"Pages/figures_tables.tex"}
+
+% --- Début du contenu principal ---
+\cleardoublepage
+% La pagination commence à la page d'introduction.
+\cfoot{\thepage} % Active l'affichage du numéro de page en bas au centre
+\fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[C]{\MakeUppercase{\leftmark}}
+    \renewcommand{\headrulewidth}{0.5pt}
+    \cfoot{\thepage} % Active aussi pour les premières pages de chapitre
+}
+
+\input{"Pages/introduction.tex"}
+
+\input{"Chapitres/chapitre_1.tex"}
+
+\input{"Chapitres/chapitre_2.tex"}
+
+\input{"Chapitres/chapitre_3.tex"}
+
+\input{"Pages/Conclusion.tex"}
+
+\input{"Pages/Biblio.tex"}
+\end{document}

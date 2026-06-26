@@ -1,0 +1,606 @@
+var AGENCE_DATA = {
+  "agence": {
+    "nom": "Centre d'Affaire Bank of Africa Agadir"
+  },
+  "services": {
+    "Arrêté de compte - Chèques": {
+      "description": "Section dédiée aux opérations de remise de chèques, effets de commerce et escompte traités au sein du Centre d'Affaires.",
+      "sousPages": {
+        "I - La Remise de Chèque": {
+          "type": "contenu",
+          "texte": "Avant d'aborder l'opération de remise de chèque, il convient de définir cet instrument de paiement et d'en présenter les différentes catégories.",
+          "sousSections": {
+            "1 : Définition du chèque": {
+              "texte": "Le chèque est un moyen de paiement à vue ; il est payable dès sa présentation et ne prend pas en considération une échéance future."
+            },
+            "2 : Caractéristiques générales": {
+              "texte": "",
+              "tableau": {
+                "entetes": ["Caractéristique", "Détail"],
+                "lignes": [
+                  ["Durée de validité d'un chèque ordinaire", "1 an et 20 jours"],
+                  ["Durée de validité d'un chèque certifié", "21 jours"],
+                  ["Délai de présentation d'un chèque de banque", "20 jours"]
+                ]
+              },
+              "note": "Le chèque ordinaire n'est plus considéré comme un moyen de garantie au sens de la loi."
+            },
+            "3 : La certification du chèque": {
+              "texte": "La certification est une opération par laquelle la banque bloque et réserve la somme inscrite sur le chèque à partir du solde bancaire du tireur (donneur). Ce mécanisme garantit au bénéficiaire la disponibilité des fonds pendant la durée de validité du chèque certifié (21 jours)."
+            },
+            "4 : Types de chèques": {
+              "texte": "",
+              "tableau": {
+                "entetes": ["Type", "Description"],
+                "lignes": [
+                  ["Chèque barré", "Encaissable uniquement par virement bancaire (versement en compte)"],
+                  ["Chèque non barré", "Encaissable par retrait direct à la caisse du centre"],
+                  ["Chèque endossable", "Peut circuler d'un porteur à un autre par endossement"],
+                  ["Chèque non endossable", "Associé exclusivement à son porteur initial"]
+                ]
+              },
+              "note": "Le CBNE (Chèque Barré Non Endossable) est le type le plus favorisé par la loi de finance marocaine, car il offre le plus haut niveau de traçabilité et de sécurité."
+            },
+            "5 : Le chèque de banque": {
+              "texte": "Le chèque de banque est émis par la banque elle-même, tiré sur son propre compte auprès de Bank Al-Maghrib (BAM). Il est sollicité par le client lorsque celui-ci souhaite offrir au bénéficiaire un moyen de paiement plus fiable qu'un chèque certifié ordinaire, car il engage directement la banque. Délai légal de préparation : 20 jours."
+            },
+            "7 : Délais de traitement bancaire": {
+              "texte": "",
+              "tableau": {
+                "entetes": ["Situation", "Délai de traitement"],
+                "lignes": [
+                  ["Même banque (saisie avant 12h00)", "Même journée J"],
+                  ["Même banque (saisie après 12h00)", "J+1"],
+                  ["Banque frère", "J+2 (en général)"],
+                  ["Hors place", "J+2 (en général)"]
+                ]
+              }
+            }
+          }
+        },
+        "II - Les Effets de Commerce (EC)": {
+          "type": "contenu",
+          "texte": "",
+          "sousSections": {
+            "Section 1 : Définitions et Catégories": {
+              "texte": "",
+              "sousSections": {
+                "1 : Définition et types": {
+                  "texte": "Les effets de commerce sont des instruments de crédit qui formalisent un engagement de paiement à une date déterminée. Ils se divisent en deux types principaux :",
+                  "tableau": {
+                    "entetes": ["Type d'effet de commerce", "Définition"],
+                    "lignes": [
+                      ["Billet à Ordre (BAO)", "Le débiteur promet de payer une somme déterminée à une date donnée au bénéficiaire. L'initiative vient du débiteur."],
+                      ["Lettre de Change Normalisée (LCN)", "Le créancier donne un ordre au débiteur de payer. L'initiative vient du créancier."]
+                    ]
+                  },
+                  "note": "Condition préalable : l'effet de commerce nécessite une causalité commerciale, c'est-à-dire qu'il doit découler d'un Registre de Commerce (RC)."
+                },
+                "2 : Catégorie d'EC selon l'échéance": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Catégorie", "Traitement"],
+                    "lignes": [
+                      ["EC échu (ayant atteint la date d'échéance)", "Traitement standard : J+2"],
+                      ["EC Non échu (n'ayant pas encore atteint l'échéance)", "Traitement : J + Nombre de jours restants jusqu'à l'échéance"]
+                    ]
+                  }
+                },
+                "3 : Vérification des EC": {
+                  "texte": "La vérification des effets de commerce suit un processus similaire à celui des chèques, portant sur les mêmes éléments de contrôle (signatures, dates, numéro de compte, montant, etc.)."
+                }
+              }
+            },
+            "Section 2 : L'Escompte des Effets de Commerce": {
+              "texte": "",
+              "sousSections": {
+                "1 : Définition": {
+                  "texte": "L'escompte est une opération de financement à court terme par laquelle une entreprise remet au Centre d'Affaires un effet de commerce avant sa date d'échéance, afin d'obtenir immédiatement des liquidités. Le centre avance alors le montant de l'effet au client, après déduction des intérêts et commissions appelés agios. À l'échéance, la banque se charge d'encaisser l'effet auprès du débiteur."
+                },
+                "2 : Intérêts de l'escompte": {
+                  "texte": "L'escompte permet à l'entreprise de transformer une créance à terme en liquidités immédiates pour financer son activité courante, améliorant ainsi sa trésorerie sans attendre l'échéance de l'effet."
+                },
+                "3 : Conditions d'éligibilité": {
+                  "texte": "Le Centre d'Affaire ne propose pas l'escompte à tous ses clients. Les conditions suivantes doivent être réunies :",
+                  "liste": {
+                    "titre": "Conditions",
+                    "items": [
+                      "Garanties suffisantes : Le client doit présenter des garanties solides.",
+                      "Solvabilité du débiteur : Le solde du compte du débiteur doit être autonome et suffisant.",
+                      "Historique du solde : Le débiteur doit jouir d'une bonne réputation auprès du centre (absence de problèmes d'encaissements antérieurs).",
+                      "Pertinence pour le client : L'escompte doit être favorable au créancier au regard de la nature de son activité."
+                    ]
+                  }
+                },
+                "4 : La ligne d'escompte": {
+                  "texte": "La banque accorde à chaque client éligible une ligne d'escompte, c'est-à-dire un plafond maximal d'effets pouvant être escomptés sur une période donnée. Exemple : Un client dispose d'une ligne d'escompte de 2 000 000 MAD par mois. Il ne peut pas présenter à l'escompte des effets de commerce dont la somme totale des montants dépasse 2 MMAD pour le mois en cours."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Arrêté de compte - Virement": {
+      "description": "Le virement est une opération par laquelle un donneur d'ordre demande à sa banque de transférer une somme déterminée de son compte vers le compte d'un bénéficiaire. Cette opération se distingue par sa typologie et par la nature du virement.",
+      "sousPages": {
+        "1 : Typologie du virement": {
+          "type": "contenu",
+          "texte": "Le virement peut prendre deux formes :",
+          "liste": {
+            "titre": "Formes de virement",
+            "items": [
+              "Virement de masse : Il s'agit d'un virement regroupant plusieurs créances en une seule opération. Par exemple, un client effectue un virement global vers son fournisseur, résumant l'ensemble des créances d'un mois.",
+              "Virement unitaire : Il concerne un transfert individuel, comme principalement les virements de salaire en faveur des salariés."
+            ]
+          }
+        },
+        "2 : Nature du Virement": {
+          "type": "contenu",
+          "texte": "",
+          "sousSections": {
+            "a) Virement Ordinaire": {
+              "texte": "Le virement ordinaire est un virement classique dont les conditions varient selon la destination :",
+              "tableau": {
+                "entetes": ["Destination", "Délai", "Commissions"],
+                "lignes": [
+                  ["Même banque", "Immédiat", "Sans commissions bancaires"],
+                  ["Banque frère (autre banque)", "48h à 72h", "Varient selon les clauses"]
+                ]
+              }
+            },
+            "b) Virement SBRM (express)": {
+              "texte": "Le virement SBRM est un virement express effectué dans la même journée bancaire. Ses caractéristiques sont les suivantes :",
+              "liste": {
+                "titre": "Caractéristiques",
+                "items": [
+                  "Conditions horaires : L'opération de saisie doit impérativement être effectuée avant 15h00, afin de laisser un intervalle d'au moins une heure pour le traitement.",
+                  "Garantie : Le montant de virement est crédité sur le compte du bénéficiaire dans la même journée (avant 16h00).",
+                  "Frais : Montant fixe de 150 MAD, sans aucune mesure de plafond."
+                ]
+              }
+            },
+            "c) Virement Instantané": {
+              "texte": "Le virement instantané offre une alternative rapide mais encadrée :",
+              "liste": {
+                "titre": "Caractéristiques",
+                "items": [
+                  "Plafond : 60 000 MAD maximum.",
+                  "Type : Exclusivement unitaire.",
+                  "Frais : Montant fixe de 23 MAD."
+                ]
+              },
+              "note": "Bonne pratique observée : L'agent responsable conseille systématiquement aux clients souhaitant effectuer un virement SBRM, dont le montant est inférieur à 60 000 MAD, d'opter pour le virement instantané. Cette recommandation permet au client d'économiser la différence de frais (150 MAD contre 23 MAD) tout en bénéficiant d'un traitement immédiat."
+            }
+          }
+        }
+      }
+    },
+    "Commerce international et Digitalisation du service 1": {
+      "description": "Le système bancaire marocain a renforcé sa position depuis les années 2000 avec l'apparition de groupes bancaires panafricains comme Attijariwafa Bank, Banque Centrale Populaire et BMCE Bank of Africa. Il joue un rôle clé dans le financement et la sécurisation des échanges commerciaux internationaux du pays. Les banques marocaines agissent comme des exécutants techniques pour les opérations documentaires, garantissent que les transactions respectent la réglementation et conseillent les entreprises qui exportent et importent.",
+      "sousPages": {
+        "Section 1 : Le Rôle Stratégique du Système Bancaire dans le Financement du Commerce Extérieur": {
+          "type": "contenu",
+          "texte": "Le système bancaire marocain a renforcé sa position depuis les années 2000 avec l'apparition de groupes bancaires panafricains comme Attijariwafa Bank, Banque Centrale Populaire et BMCE Bank of Africa. Il joue un rôle clé dans le financement et la sécurisation des échanges commerciaux internationaux du pays. Les banques marocaines agissent comme des exécutants techniques pour les opérations documentaires, garantissent que les transactions respectent la réglementation et conseillent les entreprises qui exportent et importent.",
+          "note": "L'essor du commerce intra-africain, qui a commencé avec l'entrée en vigueur de la Zone de Libre-Échange Continentale Africaine (ZLECAf) en 2021, ouvre de nouvelles perspectives. Les banques marocaines, présentes dans plus de trente pays africains, peuvent proposer des solutions documentaires adaptées aux marchés émergents et pré-émergents du continent. Cette dimension continentale renforce l'importance d'une maîtrise stricte des techniques de paiement international pour les entreprises marocaines."
+        },
+        "Section 2 : La domiciliation": {
+          "type": "contenu",
+          "texte": "La première étape du processus consiste à procéder à la domiciliation de l'opération d'importation auprès de la banque. Cette formalité permet d'identifier et de suivre l'opération sur les plans réglementaire, douanier et financier. Selon la nature des marchandises importées, la domiciliation peut prendre l'une des formes suivantes :",
+          "sousSections": {
+            "La Déclaration Préalable d'Importation (DPI) ou la Licence d'Importation": {
+              "texte": "Ces documents sont exigés pour certaines catégories de marchandises soumises à des mesures particulières de contrôle ou de protection du marché national. Les produits concernés sont déterminés par les autorités compétentes, notamment le ministère chargé du Commerce extérieur et l'Office des Changes. La Déclaration Préalable d'Importation concerne généralement les produits faisant l'objet d'un suivi spécifique, tandis que la Licence d'Importation est requise pour les marchandises soumises à des restrictions particulières ou à un régime d'autorisation préalable."
+            },
+            "L'Engagement d'Importation (EI)": {
+              "texte": "L'Engagement d'Importation constitue le régime le plus courant et s'applique aux marchandises dont l'importation est libre. Ce document est valable pendant une période de six mois à compter de sa date de validation. Il peut faire l'objet d'une seule prorogation lorsque le délai initial s'avère insuffisant pour l'achèvement de l'opération, notamment en cas de retard de livraison des marchandises ou pour d'autres motifs administratifs dûment justifiés.",
+              "note": "Par ailleurs, l'importateur doit renseigner un formulaire comportant l'ensemble des informations relatives à l'opération, notamment l'identification des parties concernées, la description détaillée des marchandises, leurs caractéristiques techniques ainsi que les références du bureau douanier compétent."
+            }
+          }
+        },
+        "Section 3 : Les moyens de paiement à l'étranger": {
+          "type": "contenu",
+          "texte": "",
+          "sousSections": {
+            "1. La remise documentaire": {
+              "texte": "La remise documentaire est une méthode de paiement international. Dans ce processus, un exportateur, c'est-à-dire un vendeur, demande à sa banque de recueillir le paiement d'un importateur, qui est l'acheteur étranger, en échange de documents commerciaux et/ou financiers. En résumé, la banque sert d'intermédiaire de confiance. Elle remet les documents qui prouvent la propriété de la marchandise uniquement après que l'acheteur a payé ou s'est engagé à payer. Cependant, la banque ne garantit pas le paiement.",
+              "sousSections": {
+                "1.1 Définition": {
+                  "texte": "La remise documentaire est une méthode de paiement international. Dans ce processus, un exportateur, c'est-à-dire un vendeur, demande à sa banque de recueillir le paiement d'un importateur, qui est l'acheteur étranger, en échange de documents commerciaux et/ou financiers."
+                },
+                "1.2 Les acteurs": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Acteur", "Rôle dans l'opération"],
+                    "lignes": [
+                      ["Exportateur (Donneur d'ordre)", "Expédie la marchandise et remet les documents à sa banque avec des instructions précises d'encaissement"],
+                      ["Banque remettante", "Banque de l'exportateur — vérifie les documents, rédige la lettre d'instructions et les transmet par SWIFT à la banque étrangère"],
+                      ["Banque présentatrice", "Banque de l'importateur — présente les documents à l'acheteur et collecte le paiement ou l'acceptation de traite"],
+                      ["Importateur (Tiré)", "Règle immédiatement ou accepte la traite pour obtenir les documents et retirer la marchandise"]
+                    ]
+                  }
+                },
+                "1.3 Les deux formes principales": {
+                  "texte": "",
+                  "sousSections": {
+                    "A) Documents contre Paiement (D/P)": {
+                      "texte": "L'importateur doit payer immédiatement lors de la présentation des documents. La banque présentatrice ne remet les documents qu'après avoir réussi à encaisser les fonds effectivement. C'est la méthode la plus sécurisée pour l'exportateur.",
+                      "liste": {
+                        "titre": "Caractéristiques",
+                        "items": [
+                          "Paiement à vue, au comptant",
+                          "Risque pour l'exportateur : faible, car il garde le contrôle des documents jusqu'au paiement",
+                          "Utilisé pour des relations commerciales de confiance modérée ou pour des premières transactions"
+                        ]
+                      }
+                    },
+                    "B) Documents contre Acceptation (D/A)": {
+                      "texte": "L'importateur signe une lettre de change (traite) promettant de payer à une date convenue (30, 60, 90 jours, etc.). La banque lui donne les documents immédiatement en échange de cette signature, avant tout paiement réel.",
+                      "liste": {
+                        "titre": "Caractéristiques",
+                        "items": [
+                          "Paiement différé, l'acheteur a la marchandise avant de payer",
+                          "Risque pour l'exportateur : plus élevé, car il peut y avoir des procédures juridiques dans le pays étranger en cas de non-paiement",
+                          "Utilisé quand une relation commerciale établie existe entre les deux parties"
+                        ]
+                      }
+                    }
+                  }
+                },
+                "1.4 Les documents transmis": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Catégorie", "Document", "Rôle"],
+                    "lignes": [
+                      ["Financier", "Lettre de change (traite)", "Ordre de paiement signé par l'exportateur"],
+                      ["Financier", "Billet à ordre", "Promesse de paiement signée par l'importateur"],
+                      ["Commercial", "Facture commerciale", "Détail complet de la transaction"],
+                      ["Commercial", "Connaissement (B/L)", "Titre de propriété de la marchandise en transit"],
+                      ["Commercial", "Liste de colisage", "Détail du contenu et poids des colis"],
+                      ["Commercial", "Certificat d'origine", "Prouve la provenance géographique de la marchandise"],
+                      ["Commercial", "Certificat d'assurance", "Couverture du transport international"]
+                    ]
+                  }
+                },
+                "1.5 Les risques résiduels": {
+                  "texte": "",
+                  "liste": {
+                    "titre": "Risques",
+                    "items": [
+                      "Risque de non-paiement : la banque ne se garantit pas, si l'importateur refuse, l'exportateur doit engager des actions légales coûteuses à l'international.",
+                      "Risque de non-levée : l'acheteur peut rejeter les documents, ce qui entraîne le blocage de la marchandise en transit et des frais de stockage.",
+                      "Risque pays : instabilité politique, régulations monétaires ou restrictions sur les transferts dans le pays de l'acheteur.",
+                      "Risque de change : variations entre la date d'expédition et la date réelle de paiement."
+                    ]
+                  }
+                },
+                "1.6 Cadre réglementaire": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Référence", "Contenu"],
+                    "lignes": [
+                      ["RUU 522 - CCI Paris", "Règles et Usances Uniformes relatives aux encaissements, référence mondiale applicable à toutes les banques signataires"],
+                      ["Réglementation des Changes, Office des Changes Maroc", "Obligations de rapatriement des fonds pour les exportateurs marocains dans les délais réglementaires"],
+                      ["Circulaires Bank Al-Maghrib", "Encadrement des opérations en devises et obligations déclaratives des établissements de crédit marocains"]
+                    ]
+                  }
+                }
+              }
+            },
+            "2. Le crédit documentaire (Crédoc)": {
+              "texte": "",
+              "sousSections": {
+                "2.1 Définition": {
+                  "texte": "Le crédit documentaire, également connu sous le nom de lettre de crédit (Letter of Credit, L/C), est un engagement irrévocable de la part de la banque de l'acheteur (banque émettrice) d'effectuer le paiement à l'exportateur, à condition que ce dernier soumette des documents strictement conformes aux termes et conditions du crédit dans les délais prévus. Le principe fondamental est que c'est la BANQUE qui s'engage à effectuer le paiement, et non pas seulement l'acheteur. L'exportateur n'a plus à redouter le risque de non-paiement commercial tant que ses documents respectent les exigences."
+                },
+                "2.2 Les acteurs": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Acteur", "Rôle dans l'opération"],
+                    "lignes": [
+                      ["Donneur d'ordre (Importateur)", "Demande l'ouverture du crédit documentaire auprès de sa banque et en définit les conditions"],
+                      ["Banque émettrice", "Banque de l'importateur — ouvre le crédit et s'engage irrévocablement à payer contre documents conformes"],
+                      ["Banque notificatrice", "Banque correspondante dans le pays de l'exportateur — notifie le crédit sans s'engager personnellement"],
+                      ["Banque confirmatrice", "Ajoute sa propre garantie de paiement — l'exportateur bénéficie alors d'un double engagement bancaire"],
+                      ["Bénéficiaire (Exportateur)", "Présente les documents conformes pour déclencher le paiement — il n'a plus à se soucier de la solvabilité de l'acheteur"]
+                    ]
+                  }
+                },
+                "2.3 Les formes du crédit documentaire": {
+                  "texte": "",
+                  "sousSections": {
+                    "A) selon le caractère de l'engagement": {
+                      "texte": "",
+                      "tableau": {
+                        "entetes": ["Type", "Caractéristiques"],
+                        "lignes": [
+                          ["Révocable", "Modifiable ou annulable à tout moment par la banque émettrice sans préavis — quasi inexistant aujourd'hui (exclu des RUU 600)"],
+                          ["Irrévocable", "Engagement ferme — ne peut être modifié qu'avec l'accord de toutes les parties — forme standard sous RUU 600"],
+                          ["Irrévocable et Confirmé", "Double garantie bancaire — banque émettrice + banque confirmatrice — sécurité maximale pour l'exportateur"]
+                        ]
+                      }
+                    },
+                    "B) selon les modalités de réalisation": {
+                      "texte": "",
+                      "tableau": {
+                        "entetes": ["Modalité", "Description"],
+                        "lignes": [
+                          ["Paiement à vue", "Paiement immédiat dès présentation et vérification des documents conformes"],
+                          ["Paiement différé", "Paiement à une date déterminée après présentation des documents (ex : 60 jours fin de mois)"],
+                          ["Acceptation de traite", "La banque accepte une lettre de change tirée sur elle — crée un effet mobilisable"],
+                          ["Négociation", "La banque rachète les documents avant échéance, offrant une liquidité immédiate à l'exportateur"],
+                          ["Crédit stand-by (SBLC)", "Garantie de dernier recours — déclenché uniquement en cas de défaut de l'acheteur"]
+                        ]
+                      }
+                    }
+                  }
+                },
+                "2.4 Le processus du crédit documentaire": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Étape", "Description"],
+                    "lignes": [
+                      ["1", "Contrat commercial signé entre importateur et exportateur, stipulant un paiement par crédit documentaire"],
+                      ["2", "L'importateur demande à sa banque (banque émettrice) l'ouverture du crédit avec toutes les conditions"],
+                      ["3", "La banque émettrice ouvre le crédit et l'adresse par SWIFT à la banque notificatrice/confirmatrice"],
+                      ["4", "La banque notificatrice informe l'exportateur des termes du crédit ouvert en sa faveur"],
+                      ["5", "L'exportateur expédie la marchandise et constitue le dossier documentaire conforme aux exigences du crédit"],
+                      ["6", "L'exportateur présente les documents à la banque notificatrice dans les délais impartis"],
+                      ["7", "La banque vérifie la conformité stricte des documents (maximum 5 jours bancaires sous RUU 600)"],
+                      ["8", "Si documents conformes : paiement à l'exportateur, puis remise des documents à l'importateur pour dédouanement"]
+                    ]
+                  }
+                },
+                "2.5 Le principe de la conformité documentaire": {
+                  "texte": "C'est le principe fondamental du crédit documentaire. La banque examine UNIQUEMENT les documents — elle ne prend en compte ni la marchandise, ni la relation commerciale. Toute discordance, même mineure, peut justifier un refus de paiement.",
+                  "liste": {
+                    "titre": "Points clés",
+                    "items": [
+                      "Chaque document doit correspondre exactement aux termes du crédit : dénomination de la marchandise, quantités, délais, lieux de chargement/destination",
+                      "Les réserves les plus fréquentes : documents présentés hors délai, connaissement avec clauses restrictives (foul B/L), montants ne correspondant pas à la facture",
+                      "RUU 600 (publication 600 de la CCI) : règles internationales régissant l'ensemble des opérations de crédit documentaire depuis 2007"
+                    ]
+                  }
+                },
+                "2.6 Les risques résiduels du Crédoc": {
+                  "texte": "",
+                  "liste": {
+                    "titre": "Risques",
+                    "items": [
+                      "Risque documentaire : l'exportateur peut voir son paiement refusé s'il présente des documents non conformes — même une virgule mal placée suffit",
+                      "Risque de fraude documentaire : des documents falsifiés peuvent permettre à un exportateur malhonnête d'obtenir le paiement sans livraison réelle",
+                      "Risque souverain : une banque émettrice dans un pays sous sanctions ou en crise peut ne pas honorer son engagement malgré sa bonne foi initiale",
+                      "Coût élevé : commissions d'ouverture, de confirmation, d'utilisation et de modification peuvent représenter 1% à 3% du montant de la transaction"
+                    ]
+                  }
+                }
+              }
+            },
+            "3. Les virements bancaires internationaux": {
+              "texte": "",
+              "sousSections": {
+                "1 : Définition": {
+                  "texte": "Le virement international (ou virement SWIFT) est un transfert direct de fonds ordonné par un donneur d'ordre (importateur) au profit d'un bénéficiaire (exportateur), sans conditionnement à la remise de documents. C'est la modalité de paiement la plus simple, la plus rapide et la moins coûteuse, mais aussi la moins sécurisée pour l'exportateur."
+                },
+                "2 : Les formes principales": {
+                  "texte": "",
+                  "tableau": {
+                    "entetes": ["Type", "Description"],
+                    "lignes": [
+                      ["Virement anticipé (advance payment)", "L'importateur paie avant réception de la marchandise, risque maximum pour l'acheteur, zéro risque pour le vendeur"],
+                      ["Virement à vue (at sight)", "Paiement déclenché à la réception des documents, utilisé entre partenaires de confiance établie"],
+                      ["Virement différé (open account)", "Paiement à terme après réception et vérification de la marchandise, risque maximum pour l'exportateur"]
+                    ]
+                  }
+                },
+                "3 : Infrastructures SWIFT": {
+                  "texte": "Réseau SWIFT (Society for Worldwide Interbank Financial Telecommunication) : standard universel de messagerie interbancaire sécurisée. Codes BIC/SWIFT : identifiant unique de chaque banque dans les transactions internationales. IBAN : numéro de compte standardisé permettant l'identification précise du bénéficiaire. Délai moyen : 1 à 3 jours ouvrables selon les correspondants bancaires impliqués.",
+                  "note": "Cadre réglementaire marocain : tout virement international est soumis au contrôle de l'Office des Changes. Les importateurs doivent disposer d'une domiciliation bancaire et les exportateurs sont tenus de rapatrier les devises dans les 90 jours suivant l'expédition."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Commerce international et Digitalisation du service 2": {
+      "_ref": "Commerce international et Digitalisation du service 1"
+    },
+    "Cautions bancaires et Contrôle interne": {
+      "description": "La caution bancaire est un engagement pris par la banque pour garantir l'exécution d'une obligation de son client envers un tiers. Si le client ne respecte pas ses obligations, la banque s'engage à payer le bénéficiaire de la caution. Au Centre d'affaires, les cautions bancaires constituent une activité importante et peuvent être classées en plusieurs catégories.",
+      "sousPages": {
+        "Section 1 : Les Cautions en Douane": {
+          "type": "contenu",
+          "texte": "La caution en douane sont des garanties bancaires liées aux opérations douanières, elle se divise en trois sous types :",
+          "sousSections": {
+            "1.1 Importation temporaire": {
+              "texte": "L'importation temporaire concerne l'introduction sur le territoire national de marchandises, ou de biens destinés à être réexportés dans leur état initial, sans création de valeur ajoutée.",
+              "liste": {
+                "titre": "Exemple pratique",
+                "items": [
+                  "Une entreprise marocaine exportatrice de tomates avait besoin des palettes en bois, prévenant de l'étranger pour emballer ses marchandises dans des caisses en plastique. Ces palettes sont uniquement empruntées. Ils ne subissent aucune transformation. Elles servent du support logistique, l'importation de ces palettes nécessite une caution bancaire garantissant, que l'entreprise les restituera en bon état et en nombre complet."
+                ]
+              }
+            },
+            "1.2 Admission temporaire": {
+              "texte": "L'admission temporaire suit le même principe de l'importation temporaire, à une différence près : les biens importés temporairement génèrent une valeur ajoutée au cours de leur utilisation sur le territoire national. Cette valeur ajoutée résulte de charges supplémentaires telles que le transport, des accessoires additionnés, ou d'autres transformations accessoires."
+            },
+            "1.3 Acquit-à-caution": {
+              "texte": "L'acquit-à-caution est une garantie bancaire permettant le transit de marchandises sous douane d'un point à un autre du territoire national, sans ouverture ni manipulation de la marchandise.",
+              "liste": {
+                "titre": "Exemple pratique",
+                "items": [
+                  "Une entreprise attend un conteneur de bijoux devant arriver au port d'Agadir. Par erreur de transport, le conteneur arrive au port de Tanger. La direction douanière autorise le transfert vers Agadir, mais exige une caution bancaire garantissant que le conteneur ne sera pas ouvert avant son arrivé à destination. Avant l'émission de la caution, la banque procède généralement au scellement du conteneur. Si le conteneur est ouvert en cours de route, la caution est par la douane."
+                ]
+              },
+              "note": "Le traitement de l'acquit-à-caution est similaire que celui de cation d'importation temporaire."
+            }
+          }
+        },
+        "Section 2 : Les Cautions Administratives": {
+          "type": "contenu",
+          "texte": "Les cautions administratives sont spécifiquement dédiées aux marchés publics. Elles accompagnent les entreprises tout au long du cycle de vie d'un projet public, depuis la candidature jusqu'à la fin de la période de la garantie. Voici l'enchaînement chronologique :",
+          "tableau": {
+            "entetes": ["Étape", "Phase", "Caution"],
+            "lignes": [
+              ["1", "Candidature", "Caution Provisoire"],
+              ["2", "Attribution", "Caution Définitive"],
+              ["3", "Exécution par tranche", "Caution d'acompte"],
+              ["4", "Fin du Projet", "Caution de Retenue de Garantie"]
+            ]
+          },
+          "sousSections": {
+            "2.1 Caution Provisoire": {
+              "texte": "",
+              "liste": {
+                "titre": "Caractéristiques",
+                "items": [
+                  "Objectif : Garantir le sérieux de l'engagement du candidat pour le projet.",
+                  "Fonction pour l'État : Moyen de filtrage des candidats avant la comparaison des dossiers devant la commission publique.",
+                  "Moment : Phase de candidature (L'appel d'offres)."
+                ]
+              }
+            },
+            "2.2 Caution Définitive": {
+              "texte": "",
+              "liste": {
+                "titre": "Caractéristiques",
+                "items": [
+                  "Objectif : Finaliser l'engagement définitif de l'entreprise retenue pour le projet.",
+                  "Moment : Après l'attribution du marché.",
+                  "Conséquence : La soumission de la caution définitive entraîne la restitution de la caution provisoire."
+                ]
+              }
+            },
+            "2.3 Caution d'acompte": {
+              "texte": "",
+              "liste": {
+                "titre": "Caractéristiques",
+                "items": [
+                  "Objectif : Garantir le bon achèvement du projet en contrepartie d'avances versées par l'État.",
+                  "Fonctionnement : Le projet est généralement divisé en 3, 4 ou 5 tranches. L'État peut offrir un acompte à l'entreprise à la fin de chaque tranche pour soulager sa trésorerie, mais cette avance est conditionnée par la fourniture d'une caution d'acompte.",
+                  "Nombre : Le nombre des cautions se varie selon les offres de l'État, il peut y avoir zéro, une ou plusieurs cautions d'acomptes. Chaque acompte versé nécessite une caution distincte."
+                ]
+              }
+            },
+            "2.4 Caution de Retenue de Garantie": {
+              "texte": "",
+              "liste": {
+                "titre": "Caractéristiques",
+                "items": [
+                  "Objectif : Engager l'entreprise à remédier aux éventuelles malfaçons ou défaillances survenant après la livraison du projet.",
+                  "Moment : À la fin du projet, après la phase d'exécution.",
+                  "Durée : 1 à 2 ans après l'achèvement des travaux.",
+                  "Conséquences : La soumission de la caution de retenue de garantie entraîne la restitution des cautions définitives et d'acompte (si elles existent)."
+                ]
+              }
+            }
+          }
+        },
+        "Section 3 : Les Cautions Diverses": {
+          "type": "contenu",
+          "texte": "",
+          "sousSections": {
+            "3.1 Caution en faveur de l'administration publique": {
+              "texte": "Ce type de caution permet à un client de bénéficier de facilités de paiement auprès d'un organisme public, la banque se portant garante du règlement :",
+              "liste": {
+                "titre": "Exemple pratique : Office National des Pêches (ONP)",
+                "items": [
+                  "Une entreprise commerciale, dont l'activité consiste à acheter du poisson au marché situé du port, souhaite bénéficier d'une facilité de paiement auprès de l'ONP.",
+                  "L'ONP exige une caution bancaire pour sécuriser les paiements de l'entreprise.",
+                  "L'entreprise se rend au marché de poissons, effectue ses achats et signe un ordre de paiement faisant office de facture auprès de l'ONP, sans payer immédiatement.",
+                  "L'ONP transmet ces factures au bureau de paiement, qui les adresse aux banques respectives des clients en demandant de débiter les comptes par le montant de factures.",
+                  "L'offre reçoit son argent directement de la banque, il ne s'engage pas avec le client sur le recouvrement."
+                ]
+              },
+              "note": "Le client n'a pas le droit de passer une nouvelle commande au marché sans avoir préalablement réglé la précédente auprès de sa banque. Si le montant de l'achat excède le solde disponible du client (par exemple, un achat de 1 000 000 MAD pour un solde 900 000 MAD), le compte sera mis en position débitrice, car l'ONP contraint la banque au paiement."
+            },
+            "3.2 Caution en faveur du secteur privé": {
+              "texte": "Le principe est identique à celui de la caution en faveur de l'administration publique, mais le bénéfice de la caution est une organisation privée (grande surface de distribution, droguerie, enseigne commerciale, etc.).",
+              "liste": {
+                "titre": "Exemple pratique : Bricoma",
+                "items": [
+                  "Le client du CAF souhaite bénéficier d'une facilité de paiement auprès de Bricoma.",
+                  "Bricoma exige une caution bancaire pour garantir les remboursements.",
+                  "Différence clé : Bricoma ne transite pas par la banque pour le paiement courant. Le client règle ses factures directement auprès de Bricoma à la fin de chaque mois (ou selon la périodicité convenue).",
+                  "Si tout est normal : La banque n'intervient pas.",
+                  "En cas de défaut de paiement : Bricoma contacte le CAF pour le remboursement via la caution. La banque s'engage légalement à payer Bricoma, tout en contactant le client pour trouver une solution."
+                ]
+              }
+            }
+          }
+        },
+        "Section 4 : La Caution Avale": {
+          "type": "contenu",
+          "texte": "La caution avale est une garantie bancaire spécifique aux effets de commerce, et plus particulièrement au Billet à Ordre (BAO).",
+          "sousSections": {
+            "1.1 Logique de fonctionnement": {
+              "texte": "Pour comprendre la caution avale, il est utile de la comparer avec la certification d'un chèque :",
+              "tableau": {
+                "entetes": ["Instrument", "Mécanisme de garantie", "Blocage des fonds"],
+                "lignes": [
+                  ["Chèque", "La certification fait un blocage du montant sur le compte du tireur", "OUI"],
+                  ["Effet de Commerce (BAO)", "Le BAO avalisé garantit le paiement", "NON"]
+                ]
+              }
+            },
+            "1.2 Pourquoi pas le blocage pour l'Effet de Commerce ?": {
+              "texte": "Le blocage du montant d'un effet de commerce serait contradictoire avec sa nature même. En effet, si le débiteur disposait des fonds ou la volonté de payer immédiatement, le recours à un effet de commerce n'aurait pas lieu d'être. L'effet de commerce est précisément un instrument de crédit à terme."
+            },
+            "4.3 Rôle de la caution avale": {
+              "texte": "La caution avale joue le rôle de garantir de paiement envers le bénéficiaire de l'effet. En se portant avaliseur, la banque s'engage à payer le montant de l'effet à l'échéance si le débiteur est défaillant, sans immobiliser les fonds du débiteur avant l'échéance. L'effet est alors qualifié d'effet avalisé."
+            }
+          }
+        }
+      }
+    },
+    "Chargé de Caisse": {
+      "description": "Le Chargé de Caisse est responsable des opérations de retrait, versement, mise à disposition et validation de conformité des chèques au sein du Centre d'Affaires.",
+      "sousPages": {
+        "Section 1 : Le Retrait": {
+          "type": "contenu",
+          "texte": "Le retrait est l'une des opérations les plus simples et les plus fréquentes traitées au niveau de la caisse du Centre d'Affaires. Il consiste pour un client à récupérer des fonds disponibles sur son compte bancaire. Le chargé de caisse du centre traite le retrait selon les cas suivants :",
+          "tableau": {
+            "entetes": ["Cas de retrait", "Document requis"],
+            "lignes": [
+              ["Retrait ordinaire", "Présentation de la CIN (Carte d'Identité Nationale)"],
+              ["Retrait par chèque non barré", "Chèque non barré endossable ou non endossable (suit la même procédure)"],
+              ["Retrait par effet de commerce échu", "EC échu et non escompté"]
+            ]
+          }
+        },
+        "Section 2 : Le Versement": {
+          "type": "contenu",
+          "texte": "Le versement est l'opération inverse du retrait. Il s'agit pour le client de déposer des fonds en cash sur son compte bancaire. C'est une opération simple et courante qui ne présente pas de complexité particulière dans son traitement."
+        },
+        "Section 3 : La Mise à Disposition": {
+          "type": "contenu",
+          "texte": "La mise à disposition est une opération qui permet de mettre des fonds à la disposition d'un bénéficiaire, sans nécessité pour celui-ci de détenir un compte bancaire. Le donneur d'ordres se présente à la banque et remet un montant déterminé. Il désigne un bénéficiaire identifié dans les documents de l'opération. Le bénéficiaire se présente ultérieurement à la banque muni de sa CIN et du reçu de la MAD, pour retirer les fonds auprès du chargé de caisse. C'est une opération particulièrement utile pour les transferts de fonds vers des personnes ne disposant pas de compte bancaire."
+        },
+        "Section 4 : Validation de Conformité des Valeurs de la Compensation des Chèques et LCN": {
+          "type": "contenu",
+          "texte": "La vérification des chèques est une mission essentielle assurée quotidiennement au sein du Centre d'Affaires. Elle se décline en deux volets :",
+          "sousSections": {
+            "4.1 Validation des chèques des clients du Centre d'Affaires": {
+              "texte": "Chaque matin, le caissier du centre procède à la vérification des chèques prêts à l'encaissement. Cette opération concerne principalement les chèques émis par les clients du CAF (par exemple, des chèques signés par l'entreprise COPAG, client du centre) et présentés à l'encaissement par leurs fournisseurs auprès de n'importe quelle agence du groupe BMCE.",
+              "liste": {
+                "titre": "Éléments de contrôle vérifiés",
+                "items": [
+                  "La signature : Comparaison avec l'exemplaire de signature conservé par le caissier. Certaines entreprises disposent de deux ou trois signatures autorisées (gérants, mandataires)",
+                  "La date d'émission et d'échéance",
+                  "Le numéro de compte",
+                  "Le numéro de chèque",
+                  "Le cachet et la signature du bénéficiaire",
+                  "La concordance du montant en chiffres et en lettres"
+                ]
+              },
+              "note": "En cas d'anomalie : Si l'un de ces éléments n'est pas conforme, le chèque est déclaré impayé et rejeté, accompagné d'une attestation précisant la cause du rejet."
+            },
+            "4.2 Validation des chèques de clients hors Centre d'Affaires": {
+              "texte": "Cette mission est confiée au chargé de remise. Il vérifie les chèques reçus après saisie selon les mêmes critères que précédemment, à l'exception de la signature, puisqu'il ne dispose pas de l'exemplaire de signature. Cette vérification partielle permet néanmoins de détecter en amont les cas potentiels d'impayé et d'assurer une plus grande fluidité dans le traitement."
+            }
+          }
+        }
+      }
+    }
+  }
+};

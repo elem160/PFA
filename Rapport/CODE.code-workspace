@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"name": "CODE",
+			"path": "C:/Users/Elem/Desktop/CODE"
+		},
+		{
+			"name": "exo info",
+			"path": "C:/Users/Elem/Downloads/Documents/exo info"
+		},
+		{
+			"path": "../.."
+		}
+	],
+	"settings": {
+		"files.exclude": {
+			"**/.git": true,
+			"**/.svn": true,
+			"**/.hg": true,
+			"**/.DS_Store": true,
+			"**/Thumbs.db": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\Page_de_garde.aux": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\Page_de_garde.log": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\Page_de_garde.gz": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\Page_de_garde.out": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\rapport.aux": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\rapport.log": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\rapport.gz": true,
+			"**/d:\\Code Projects\\Stage\\Rapport\\rapport.out": true
+		}
+	}
+}

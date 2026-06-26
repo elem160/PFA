@@ -1,0 +1,189 @@
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float}
+\usepackage{amsmath}
+
+\usepackage{tocloft}
+\usepackage{titlesec}
+\usepackage{lmodern}
+
+\usepackage{multirow}
+
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}p{#1}}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{shapes, arrows, positioning}
+
+% ---- Paramètres de marges ----
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=2.5cm,
+    right=2.5cm,
+    top=2.5cm,
+    bottom=2.5cm
+}
+
+% ---- Paramètres des tableaux ----
+
+\usepackage{longtable}
+\usepackage[table]{xcolor}
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.5} 
+
+% ---- Packages de mise en page ----
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[french]{babel}
+\addto\captionsfrench{
+  \renewcommand{\tablename}{Tableau}
+}
+
+% ---- Numerotation des chapitres ----
+\renewcommand{\thechapter}{\arabic{chapter}}
+\renewcommand{\thesection}{\thechapter.\arabic{section}}
+
+% ---- En-têtes et pieds de pages ----
+\usepackage{fancyhdr}
+\setlength{\headheight}{16pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[C]{\leftmark}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[C]{\leftmark}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0.4pt}
+}
+
+% ---- Paragraphe et indentation ----
+\usepackage{setspace}
+\setstretch{1.5}            % Interligne 1.5
+\setlength{\parindent}{0pt} % Sans retrait
+\setlength{\parskip}{1em}   % Espacement entre les paragraphes
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+% ---- Table des matieres ----
+
+% Espace avant chaque chapitre
+\setlength{\cftbeforechapskip}{8pt}
+% Espace avant sections
+\setlength{\cftbeforesecskip}{4pt}
+% Espace avant sous-sections
+\setlength{\cftbeforesubsecskip}{2pt}
+% Espace apres nemuro
+\setlength{\cftfignumwidth}{3em}
+% 1. Augmenter la largeur pour "Chapitre VII"
+\setlength{\cftchapnumwidth}{2em}
+% 1. Augmenter la largeur pour "Chapitre VII"
+\setlength{\cftsubsecnumwidth}{3.5em}
+
+% ---- Centrage des titres auto-générés (tocloft) ----
+
+% Pour la Table des Matières
+\renewcommand{\cfttoctitlefont}{\hfill\Huge\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill\markboth{TABLE DES MATIÈRES}{TABLE DES MATIÈRES}}
+
+% Pour la Liste des Figures
+\renewcommand{\cftloftitlefont}{\hfill\Huge\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill\markboth{LISTE DES FIGURES}{LISTE DES FIGURES}}
+
+% Pour la Liste des Tableaux
+\renewcommand{\cftlottitlefont}{\hfill\Huge\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill\markboth{LISTE DES TABLEAUX}{LISTE DES TABLEAUX}}
+
+% ---- Style chapitre ----
+\titleformat{\chapter}[hang]
+{\normalfont\large\bfseries\centering} % \large correspond à la taille 14pt
+{}{0em}{}
+
+\makeatletter
+\def\@makechapterhead#1{%
+  \thispagestyle{empty}
+  \vspace*{\fill}
+  \vspace*{-50pt}
+  {\centering
+    \normalfont\large\bfseries
+    Chapitre \thechapter\par
+    \vspace{10pt}
+    \large #1\par
+  }
+  \vspace*{\fill}
+  \newpage
+}
+\makeatother
+
+\makeatletter
+\def\@makeschapterhead#1{%
+  \thispagestyle{fancy}
+  \markboth{\MakeUppercase{#1}}{\MakeUppercase{#1}}
+  
+  \vspace*{-15pt} 
+  
+  {\centering
+    \normalfont\large\bfseries
+    #1\par
+  }
+  
+  \vspace{25pt} 
+}
+\makeatother
+
+% ---- Style itemize ----
+
+\usepackage{enumitem}
+
+\setlist[itemize]{
+    label=$\cdot$,
+    itemsep=5pt,    % Espace entre les items
+    parsep=0pt,     % Espace entre les paragraphes à l'intérieur d'un item
+    leftmargin=1cm
+}
+
+% ---- Style Tableaux ----
+
+\usepackage[table]{xcolor}
+
+% \definecolor{bleuEntete}{RGB}{31, 73, 125} % Un bleu marine profond et pro
+\definecolor{bleuEntete}{RGB}{79, 129, 189} % Un bleu équilibré et moderne
+
+% Définition d'un bleu personnalisé (optionnel, plus pro que le "blue" par défaut)
+\definecolor{bleuTresClair}{RGB}{240, 245, 255} 
+
+% Commande pour activer l'alternance en bleu
+\newcommand{\monStyleTableau}{
+  % On commence à la ligne 2 (pour laisser l'en-tête tranquille)
+  % Alterne entre un bleu très clair et le blanc
+  \rowcolors{2}{bleuTresClair}{white} 
+}
+
+
+
+\title{Rapport PFA}
+\author{Islam ABOBAL}
+\date{June 2026}
+
+\usepackage{xcolor}
+\usepackage[skins]{tcolorbox}
+
+% Définition des couleurs personnalisées pour la page de garde
+\definecolor{titleblue}{RGB}{23, 108, 172}
+\definecolor{sectionblue}{RGB}{0, 162, 232}
+
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{xcolor}
+\usepackage{colortbl}
+

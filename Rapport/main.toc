@@ -1,0 +1,31 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Remerciements}{2}{section*.1}%
+\contentsline {chapter}{Avant-propos}{3}{section*.3}%
+\contentsline {chapter}{Table des matières}{4}{section*.5}%
+\contentsline {chapter}{Liste des abréviations}{5}{section*.6}%
+\contentsline {chapter}{Liste des figures et des tableaux}{6}{section*.8}%
+\contentsline {chapter}{Introduction générale}{7}{chapter*.10}%
+\contentsline {chapter}{\numberline {1}Cadre Conceptuel et Théorie de Risque de Crédit}{10}{chapter.1}%
+\contentsline {section}{\numberline {1.1}La théorie du risque de crédit}{11}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Méthodologie d'Investigation}{12}{chapter.2}%
+\contentsline {chapter}{Chapitre 2 : Champ d'investigation et méthodologie de recherche}{13}{chapter*.11}%
+\contentsline {paragraph}{Le rôle économique de la banque : la théorie de l'intermédiation}{19}{paragraph*.12}%
+\contentsline {paragraph}{Le cycle d'exploitation et le Besoin en Fonds de Roulement (BFR)}{19}{paragraph*.13}%
+\contentsline {paragraph}{La réponse du centre d'affaires face à l'asymétrie d'information}{20}{paragraph*.14}%
+\contentsline {paragraph}{Le retrait}{21}{paragraph*.15}%
+\contentsline {paragraph}{Le versement}{21}{paragraph*.16}%
+\contentsline {paragraph}{La mise à disposition}{22}{paragraph*.17}%
+\contentsline {paragraph}{La validation de conformité des valeurs de la compensation des chèques et LCN}{22}{paragraph*.18}%
+\contentsline {paragraph}{Le rééquilibrage de la trésorerie physique : la procédure d'appel de fonds}{23}{paragraph*.19}%
+\contentsline {paragraph}{Le virement}{24}{paragraph*.20}%
+\contentsline {paragraph}{Le chèque : fondement et typologie}{25}{paragraph*.21}%
+\contentsline {paragraph}{Les effets de commerce : matérialisation de la créance}{27}{paragraph*.22}%
+\contentsline {paragraph}{Le mécanisme de l'escompte commercial}{28}{paragraph*.23}%
+\contentsline {paragraph}{Typologie des engagements par signature : les cautions bancaires}{29}{paragraph*.24}%
+\contentsline {paragraph}{La gestion du risque de contrepartie}{31}{paragraph*.25}%
+\contentsline {paragraph}{Le rôle stratégique du système bancaire dans le financement du commerce extérieur}{33}{paragraph*.26}%
+\contentsline {paragraph}{La domiciliation}{33}{paragraph*.27}%
+\contentsline {paragraph}{Les moyens de paiement à l'étranger}{34}{paragraph*.28}%
+\contentsline {chapter}{\numberline {3}Résultats de l’étude et le bilan personnel et professionnel}{42}{chapter.3}%
+\contentsline {chapter}{Conclusion}{44}{section*.29}%
+\contentsline {chapter}{Bibliographie/Webographie}{45}{section*.31}%
